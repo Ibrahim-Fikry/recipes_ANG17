@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output, input, output } from '@angular/core';
+import { Recipe } from './../../RecipeModel';
 
 @Component({
   selector: 'app-item-recipe',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './item-recipe.component.scss'
 })
 export class ItemRecipeComponent {
+@Input() Recipeitem?:Recipe;
 
 }
