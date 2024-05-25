@@ -21,17 +21,17 @@
             <div class="row">
                 <div class="col-md-5 form-group" >
                     <label for="name">name</label>
-                    <input type="text" class="form-control" id="name">
+                    <input type="text" #nameinpt class="form-control" id="name">
                 </div>
                 <div class="col-md-2 form-group" >
                     <label for="amount">amount</label>
-                    <input type="text" class="form-control" id="amount">
+                    <input type="text" #countinpt class="form-control" id="amount">
                 </div>
             </div>
             <br> 
             <div class="row">
                 <div class="col-md-12">
-                    <button type="submit" class="btn btn-success">Add</button>&nbsp;
+                    <button type="button"  class="btn btn-success" (click)="Adding()">Add</button>&nbsp;
                     <button type="button" class="btn btn-danger">Delete</button>&nbsp;
                     <button type="button" class="btn btn-primary">Clear</button>&nbsp;
                 </div>
